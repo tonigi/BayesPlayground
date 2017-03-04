@@ -1,6 +1,7 @@
 # InferNetPlayground
 Test sandbox
 
+```fsharp
 I=/Users/toni/Apps/infer.net/Bin
 fsharpi /r:$I/Infer.Runtime.dll /r:$I/Infer.Compiler.dll /r:$I/Infer.FSharp.dll 
 
@@ -27,3 +28,4 @@ let ieg=InferenceEngine(GibbsSampling());;
 let o=ieg.Infer<seq<double>>(g1*g2,QueryTypes.Samples);;  
 Seq.iter (printfn "%A") o;;            
 
+```
